@@ -20,7 +20,7 @@ public class time {
 
     private static ByteBuffer dbuf = ByteBuffer.allocateDirect(1024);
 
-
+    // ukendt bug, usikker på kommende fremgang, kode virker ikke 100% som den skal
     // åbner socket
     private static ServerSocketChannel setup() throws IOException {
   ServerSocketChannel ssc = ServerSocketChannel.open();
@@ -46,7 +46,7 @@ public class time {
 
     public static void main(String[] args) throws IOException {
   if (args.length > 1) {
-      System.err.println("Usage: java TimeServer [port]");
+      System.err.println("Timeserver [port] er ikke korrekt");
       return;
   }
 
